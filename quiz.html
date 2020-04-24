@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>QUIZ</title>
+    </head>
+    <body>
+        <form name="myform">
+            Q1.what is the capital of india?<br>
+            <input type="radio" name="q1" value="a">Delhi</br>
+            <input type="radio" name="q1" value="b">Mumbai</br><br>
+
+            Q2.Which is the national bird of india?<br>
+            <input type="radio" name="q2" value="a">Peacock</br>
+            <input type="radio" name="q2" value="b">Pegion</br><br>
+
+            Q3.which fruit is the king of fruits?<br>
+            <input type="radio" name="q3" value="a">Mango</br>
+            <input type="radio" name="q3" value="b">Bnana</br><br>
+
+            <input type="button" value="DONE" onclick="check()">
+
+        </form>
+
+        <script>
+            function check(){
+                var q1=document.myform.q1.value;
+                var q2=document.myform.q2.value;
+                var q3=document.myform.q3.value;
+                var count=0;
+
+                if(q1=="a")
+                {
+                    count++;
+                }
+                if(q1=="b")
+                {
+                    alert("your 1st answer is wrong");
+                }
+
+                if(q2=="a")
+                {
+                    count++;
+                }
+                if(q2=="b")
+                {
+                    alert("your 2nd answer is wrong");
+                }
+
+                if(q3=="a")
+                {
+                    count++;
+                }
+                if(q3=="b")
+                {
+                    alert("your 3rd answer is wrong");
+                }
+                alert("you got"+count+" marks");
+            }
+        
+        </script>
+
+    </body>
+</html>
